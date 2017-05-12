@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="winbgim" />
+		</Compiler>
+		<Linker>
+			<Add library="gdi32" />
+			<Add library="comdlg32" />
+			<Add library="uuid" />
+			<Add library="oleaut32" />
+			<Add library="ole32" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="winbgim/dibapi.h" />
+		<Unit filename="winbgim/dibutil.cxx" />
+		<Unit filename="winbgim/dibutil.h" />
+		<Unit filename="winbgim/drawing.cxx" />
+		<Unit filename="winbgim/file.cxx" />
+		<Unit filename="winbgim/graphics.h" />
+		<Unit filename="winbgim/misc.cxx" />
+		<Unit filename="winbgim/mouse.cxx" />
+		<Unit filename="winbgim/palette.cxx" />
+		<Unit filename="winbgim/text.cxx" />
+		<Unit filename="winbgim/winbgi.cxx" />
+		<Unit filename="winbgim/winbgim.h" />
+		<Unit filename="winbgim/winbgitypes.h" />
+		<Unit filename="winbgim/winthread.cxx" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
